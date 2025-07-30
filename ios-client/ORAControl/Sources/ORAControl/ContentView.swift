@@ -190,8 +190,8 @@ private struct InputBar: View {
                     .padding(12)
                     .background(
                         Circle()
-                            .fill(message.isEmpty ? .thinMaterial
-                                                  : Color.accentColor)
+                            .fill(message.isEmpty ? AnyShapeStyle(.thinMaterial)
+                                                  : AnyShapeStyle(Color.accentColor))
                             .matchedGeometryEffect(id: "rightBtn", in: ns)
                     )
             }
